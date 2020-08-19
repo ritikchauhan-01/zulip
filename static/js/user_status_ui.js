@@ -8,7 +8,7 @@ exports.submit_button = function () {
     return $(".update_status_text .set_user_status");
 };
 
-exports.status = function () {
+exports.edit_status = function () {
     const user_id = people.my_current_user_id();
     const old_status_text = user_status.get_status_text(user_id);
     const field = exports.input_field();
