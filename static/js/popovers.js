@@ -867,11 +867,8 @@ exports.register_click_handlers = function () {
         e.preventDefault();
     });
 
-    $("body").on("click", ".update_status_text", (e) => {
-        exports.hide_all();
-
-        user_status_ui.open_overlay();
-
+    $("body").on("click", "#status_messages", (e) => {
+        user_status_ui.status();
         e.stopPropagation();
         e.preventDefault();
     });
